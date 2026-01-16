@@ -8,6 +8,8 @@
 .font-open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -24,10 +26,12 @@
 header {
   padding-top: 51px;
   /* background-color: #FFF8F3; */
-  background: url(../images/developer.png), url(../images/header_bg.png),
-    #fff8f3;
+  background:
+    url(../images/developer.png), url(../images/header_bg.png), #fff8f3;
   background-repeat: no-repeat;
-  background-position: 23px 38px, bottom right;
+  background-position:
+    23px 38px,
+    bottom right;
 }
 .nav-container {
   width: 71.25%;
@@ -105,7 +109,7 @@ header {
   cursor: pointer;
 }
 
-.hero-image img{
+.hero-image img {
   max-width: 584px;
   /* display: block; */
   vertical-align: middle;
@@ -127,7 +131,7 @@ header {
   font-weight: bold;
 }
 
-.about-me p{
+.about-me p {
   font-size: 18px;
   line-height: 30px;
   margin-top: 30px;
@@ -221,15 +225,17 @@ header {
   margin-top: 113px;
 }
 
-.education h3, .experience h3 {
+.education h3,
+.experience h3 {
   font-size: 30px;
   font-weight: bold;
-  color: #474747
+  color: #474747;
 }
 
-.education-card, .experience-card {
+.education-card,
+.experience-card {
   max-width: 558px;
-  border: 2px solid #D1D1D1;
+  border: 2px solid #d1d1d1;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -237,20 +243,23 @@ header {
   margin-top: 30px;
 }
 
-.education-card h4, .experience-card h4 {
+.education-card h4,
+.experience-card h4 {
   font-size: 25px;
   font-weight: bold;
   color: #474747;
 }
 
-.education-card h5, .experience-card h5 {
+.education-card h5,
+.experience-card h5 {
   margin-top: 10px;
   font-size: 20px;
   font-weight: 600;
   color: #757575;
 }
 
-.education-card p, .experience-card p {
+.education-card p,
+.experience-card p {
   margin-top: 20px;
   font-size: 16px;
   line-height: 28px;
@@ -289,14 +298,15 @@ footer {
   max-width: 562px;
 }
 
-.contact h2, .message-form h2 {
+.contact h2,
+.message-form h2 {
   font-size: 35px;
   font-weight: bold;
 }
 
 .contact p {
   margin-top: 20px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 28px;
   color: #757575;
@@ -307,7 +317,8 @@ footer {
   margin-right: 20px;
 }
 
-.message-form input, .message-form textarea {
+.message-form input,
+.message-form textarea {
   margin-top: 28px;
   width: 461px;
   padding: 18px 30px;
@@ -318,4 +329,144 @@ footer {
   border-radius: 5px;
   color: #757575;
   font-size: 16px;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 576px) {
+  .skill-card-container,
+  .footer-content,
+  .resume-container {
+    flex-direction: column;
+  }
+
+  .skill-text h2,
+  .contact h2,
+  .message-form h2,
+  .about-me-content h2 {
+    font-size: 30px;
+  }
+
+  .contact {
+    width: 95%;
+  }
+
+  .about-me {
+    max-width: 100%;
+    margin: 30px auto;
+    background-color: #fff8f3;
+    padding: 5px 5px;
+  }
+
+  .about-me p {
+    margin-top: 30px;
+    max-width: 95%;
+  }
+
+  .info-card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .skill {
+    max-width: 100%;
+  }
+
+  .skill-text p {
+    max-width: 100%;
+    text-align: center;
+    color: #757575;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .skill-card {
+    max-width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #4747475d;
+    padding: 30px;
+    /* margin-bottom: 130px; */
+  }
+
+  footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 30px;
+  }
+
+  .message-form input,
+  .message-form textarea {
+    margin-top: 28px;
+    width: 100%;
+    padding: 15px 25px;
+  }
+
+  .resume {
+    width: 75%;
+  }
+
+  .resume-container {
+    margin-top: 10px;
+  }
+
+  .resume h2 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .education h3,
+  .experience h3 {
+    margin-top: 30px;
+  }
+
+  .nav-container {
+    width: 95%;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu {
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  .button-grp {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  header {
+    padding-top: 40px;
+    background: url(../images/header_bg.png), #fff8f3;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right ;
+}
 }
